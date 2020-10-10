@@ -1,4 +1,9 @@
-import { fetchWithTimeout, fetchMovies, fetchBooks } from './services';
+import {
+	fetchWithTimeout,
+	fetchMovies,
+	fetchBooks,
+	asyncFetchMovies,
+} from './services';
 const movies = require('./data/movies.json');
 
 const getBooksAndMovies = () => {
@@ -26,3 +31,8 @@ const getBooksOrMoviesPromise = getBooksOrMovies();
 getBooksOrMoviesPromise.then((results) => {
 	console.log('getBooksOrMoviesPromise', results);
 });
+
+// const results = asyncFetchMovies().then((result) => result);
+// debugger;
+// //const results2 = results.then(results);
+// console.log('Async Results', results);
