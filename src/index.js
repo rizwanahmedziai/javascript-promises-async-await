@@ -2,8 +2,8 @@ import {
 	fetchWithTimeout,
 	fetchMovies,
 	fetchBooks,
-	asyncFetchMovies,
 	asyncFetchBooks,
+	asyncFetchMovies,
 } from './services';
 const movies = require('./data/movies.json');
 
